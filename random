@@ -1,0 +1,23 @@
+ return (
+      <div>
+        <h1>Login</h1>
+        
+        <form onSubmit={this.handleSubmit}>
+          <div>
+            <label>User Name</label>
+            <input type="text" name="userName" defaultValue={this.props.user.userName} onChange={this.handleChange} />
+          </div>
+          <div>
+            <label>Password</label>
+            <input type="password" name="password" />
+          </div>
+          <button>Log In</button>
+        </form>  
+        <br/>
+        <Link to="/">Return to Home</Link>
+      </div>
+    );
+  }
+}
+
+export default LogIn;
